@@ -7,6 +7,7 @@ import { FaStar } from "react-icons/fa";
 import { MdOutlineTrackChanges } from "react-icons/md";
 import { IoIosColorPalette } from "react-icons/io";
 
+
 export default function Home() {
   return (
     <main className="bg-black text-white h-screen flex flex-col px-10 pb-10 mx-auto md:px-30 lg:px-40 xl:px-60 2xl:px-80">
@@ -61,44 +62,30 @@ export default function Home() {
 
 
 
-      <div className="mt-8 gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 grid-rows-1 items-center animate-fade-up">
+      <div className="mt-8 gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 grid-rows-1 items-center animate-fade-up">
         <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/e/ee/IPhone_15_Vector.svg"
+          src="/assets/sc1.PNG"
           width={500}
           height={500}
           alt="Picture of the author"
           className="w-full transition hover:scale-105"
         />
         <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/e/ee/IPhone_15_Vector.svg"
+          src="/assets/sc2.PNG"
           width={500}
           height={500}
           alt="Picture of the author"
           className="w-full transition hover:scale-105"
         />
         <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/e/ee/IPhone_15_Vector.svg"
+          src="/assets/sc3.PNG"
           width={500}
           height={500}
           alt="Picture of the author"
           className="w-full transition hover:scale-105"
         />
         <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/e/ee/IPhone_15_Vector.svg"
-          width={500}
-          height={500}
-          alt="Picture of the author"
-          className="w-full transition hover:scale-105"
-        />
-        <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/e/ee/IPhone_15_Vector.svg"
-          width={500}
-          height={500}
-          alt="Picture of the author"
-          className="w-full transition hover:scale-105"
-        />
-        <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/e/ee/IPhone_15_Vector.svg"
+          src="/assets/sc4.PNG"
           width={500}
           height={500}
           alt="Picture of the author"

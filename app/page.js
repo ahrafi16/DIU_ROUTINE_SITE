@@ -3,12 +3,6 @@ import { FiLinkedin } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
-import { FaStar } from "react-icons/fa";
-import { MdOutlineTrackChanges, MdHourglassEmpty, MdFiberSmartRecord } from "react-icons/md";
-import { IoIosColorPalette } from "react-icons/io";
-import { FaRegCalendarCheck, FaFilePdf, FaAffiliatetheme, FaSearch } from "react-icons/fa";
-import { PiChalkboardTeacherBold } from "react-icons/pi";
-import { FcStatistics } from "react-icons/fc";
 
 
 
@@ -20,11 +14,33 @@ export default function Home() {
           Routine<span className="text-teal-600">Viewer</span>
         </a>
         <div className="flex items-center mt-2 text-sm text-gray-200 xl:mt-0 pb-2">
-          <a className="ml-2 sm:ml-5 hover:text-white" href="" target="_blank"></a>
-          <a className="ml-4 hover:text-white" href="#" target="_blank"><CgFileDocument className="w-5 sm:w-6 h-5 sm:h-6" /></a>
-          <a className="ml-4 hover:text-white" href="https://www.linkedin.com/in/hafizflow/" target="_blank"><FiLinkedin className="w-5 sm:w-6 h-5 sm:h-6" /></a>
-          <a className="ml-4 hover:text-white" href="" target="_blank"><FiTwitter className="w-5 sm:w-6 h-5 sm:h-6" /></a>
-          <a className="ml-4 hover:text-white" href="" target="_blank"><MdOutlineEmail className="w-5 sm:w-6 h-5 sm:h-6" /></a>
+          <a className="ml-4 hover:text-white" href="#" target="_blank">
+            <Image
+              src="/assets/linkdin.svg"
+              width={30}
+              height={30}
+              alt="Picture of the author"
+              className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+            />
+          </a>
+          <a className="ml-4 hover:text-white" href="https://www.linkedin.com/in/hafizflow/" target="_blank">
+            <Image
+              src="/assets/git.svg"
+              width={30}
+              height={30}
+              alt="Picture of the author"
+              className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+            />
+          </a>
+          <a className="ml-4 hover:text-white" href="" target="_blank">
+            <Image
+              src="/assets/email.svg"
+              width={30}
+              height={30}
+              alt="Picture of the author"
+              className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+            />
+          </a>
         </div>
       </div>
 
@@ -66,39 +82,54 @@ export default function Home() {
 
 
 
-      <div className="mt-8 gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 grid-rows-1 items-center animate-fade-up">
-        <Image
-          src="/assets/sc1.png"
-          width={500}
-          height={500}
-          alt="Picture of the author"
-          className="w-full transition-transform duration-500 ease-in-out hover:scale-105"
-        />
-        <Image
-          src="/assets/sc2.png"
-          width={500}
-          height={500}
-          alt="Picture of the author"
-          className="w-full transition-transform duration-500 ease-in-out hover:scale-105"
-        />
-        <Image
-          src="/assets/sc3.png"
-          width={500}
-          height={500}
-          alt="Picture of the author"
-          className="w-full transition-transform duration-500 ease-in-out hover:scale-105"
-        />
+      <div className="mt-8 gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 items-center animate-fade-up">
         <Image
           src="/assets/sc4.png"
+          priority
           width={500}
           height={500}
-          alt="Picture of the author"
-          className="w-full transition-transform duration-500 ease-in-out hover:scale-105"
+          alt="Screenshot 4"
+          className="w-full transition-transform duration-700 ease-in-out hover:scale-105"
+          placeholder="blur"
+          blurDataURL="/assets/sc4.png"
+        />
+
+        <Image
+          src="/assets/sc1.png"
+          priority
+          width={500}
+          height={500}
+          alt="Screenshot 1"
+          className="w-full hidden sm:block transition-transform duration-700 ease-in-out hover:scale-105"
+          placeholder="blur"
+          blurDataURL="/assets/sc1.png"
+        />
+
+        <Image
+          src="/assets/sc2.png"
+          priority
+          width={500}
+          height={500}
+          alt="Screenshot 2"
+          className="w-full hidden sm:block transition-transform duration-700 ease-in-out hover:scale-105"
+          placeholder="blur"
+          blurDataURL="/assets/sc2.png"
+        />
+
+        <Image
+          src="/assets/sc3.png"
+          priority
+          width={500}
+          height={500}
+          alt="Screenshot 3"
+          className="w-full hidden sm:block transition-transform duration-700 ease-in-out hover:scale-105"
+          placeholder="blur"
+          blurDataURL="/assets/sc3.png"
         />
       </div>
 
 
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
+      {/* <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
         <div className="flex flex-col bg-scaffold shadow-xl border border-gray-300 px-4 py-4 rounded-xl">
           <div className="flex justify-between">
             <div className="font-semibold text-xl underline">Greate Job</div>
@@ -175,7 +206,7 @@ export default function Home() {
             <div>🇬🇧 Beth L. Brown</div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       <div className="mt-12 animate-fade-up">
@@ -207,10 +238,16 @@ export default function Home() {
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
-              <FaSearch className="w-8 h-8 p-2 text-white duration-200 transform rounded-full shadow hover:scale-105 bg-surface" />
+              <Image
+                src="/assets/search.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              />
             </div>
             <div className="ml-3">
-              <h3 className="mt-1 font-bold">Search & View Student and Teacher Routine</h3>
+              <h3 className="font-bold">Routine Search</h3>
               <p className="mt-1 text-sm text-gray-400">
                 Quickly find any student or teacher routine by name or section — view detailed schedules instantly.
               </p>
@@ -219,22 +256,34 @@ export default function Home() {
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
-              <MdFiberSmartRecord className="w-8 h-8 p-2 text-white duration-200 transform rounded-full shadow hover:scale-105 bg-surface" />
+              <Image
+                src="/assets/bba.svg"
+                width={35}
+                height={35}
+                alt="Picture of the author"
+                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              />
             </div>
             <div className="ml-3">
-              <h3 className="mt-1 font-bold">Smart Routine Suggestion</h3>
+              <h3 className="font-bold">BBA & MCT Department</h3>
               <p className="mt-1 text-sm text-gray-400">
-                Get intelligent suggestions for optimized class timings or room allocations based on teacher availability and student schedules.
+                Data for this department will be added soon. Stay tuned!
               </p>
             </div>
           </div>
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
-              <IoIosColorPalette className="w-8 h-8 p-2 text-white duration-200 transform rounded-full shadow hover:scale-105 bg-surface" />
+              <Image
+                src="/assets/noti.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              />
             </div>
             <div className="ml-3">
-              <h3 className="mt-1 font-bold">Push Notification</h3>
+              <h3 className="font-bold">Notification</h3>
               <p className="mt-1 text-sm text-gray-400">
                 Stay updated with real-time notifications about routine updates or important alerts.
               </p>
@@ -245,10 +294,16 @@ export default function Home() {
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
-              <FaAffiliatetheme className="w-8 h-8 p-2 text-white duration-200 transform rounded-full shadow hover:scale-105 bg-surface" />
+              <Image
+                src="/assets/theme.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              />
             </div>
             <div className="ml-3">
-              <h3 className="mt-1 font-bold">Theme Switch</h3>
+              <h3 className=" font-bold">Theme Mode</h3>
               <p className="mt-1 text-sm text-gray-400">
                 Easily toggle between light and dark mode for a comfortable viewing experience.
               </p>
@@ -257,10 +312,16 @@ export default function Home() {
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
-              <FaRegCalendarCheck className="w-8 h-8 p-2 text-white duration-200 transform rounded-full shadow hover:scale-105 bg-surface" />
+              <Image
+                src="/assets/calender.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              />
             </div>
             <div className="ml-3">
-              <h3 className="mt-1 font-bold">Calendar Style Change</h3>
+              <h3 className="font-bold">Calendar View</h3>
               <p className="mt-1 text-sm text-gray-400">
                 Switch between different calendar views to see your routine the way you prefer.
               </p>
@@ -269,10 +330,16 @@ export default function Home() {
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
-              <FaFilePdf className="w-8 h-8 p-2 text-white duration-200 transform rounded-full shadow hover:scale-105 bg-surface" />
+              <Image
+                src="/assets/pdf.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              />
             </div>
             <div className="ml-3">
-              <h3 className="mt-1 font-bold">Class Schedule PDF Download & Share</h3>
+              <h3 className="font-bold">PDF Export & Share</h3>
               <p className="mt-1 text-sm text-gray-400">
                 Generate and share your class routine as a clean, ready-to-print PDF in seconds.
               </p>
@@ -282,10 +349,16 @@ export default function Home() {
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
-              <PiChalkboardTeacherBold className="w-8 h-8 p-2 text-white duration-200 transform rounded-full shadow hover:scale-105 bg-surface" />
+              <Image
+                src="/assets/teacher.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              />
             </div>
             <div className="ml-3">
-              <h3 className="mt-1 font-bold">View Teacher Information</h3>
+              <h3 className="font-bold">Teacher Info</h3>
               <p className="mt-1 text-sm text-gray-400">
                 Access teacher details like initials, designation, and assigned courses in one tap.r.
               </p>
@@ -294,10 +367,16 @@ export default function Home() {
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
-              <MdHourglassEmpty className="w-8 h-8 p-2 text-white duration-200 transform rounded-full shadow hover:scale-105 bg-surface" />
+              <Image
+                src="/assets/door.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              />
             </div>
             <div className="ml-3">
-              <h3 className="mt-1 font-bold">Empty Room View (Time & Date Wise) </h3>
+              <h3 className="font-bold">Empty Room Finder </h3>
               <p className="mt-1 text-sm text-gray-400">
                 Find available rooms based on specific dates and time slots — perfect for study or meetings.
               </p>
@@ -306,10 +385,16 @@ export default function Home() {
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
-              <FcStatistics className="w-8 h-8 p-2 text-white duration-200 transform rounded-full shadow hover:scale-105 bg-surface" />
+              <Image
+                src="/assets/stat.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              />
             </div>
             <div className="ml-3">
-              <h3 className="mt-1 font-bold">Routine Statistics & Overview</h3>
+              <h3 className="font-bold">Routine Insights</h3>
               <p className="mt-1 text-sm text-gray-400">
                 Get insightful stats on your weekly or semester schedule — total classes, hours, and more.
               </p>
@@ -347,30 +432,10 @@ export default function Home() {
 
       {/* footer */}
       <div className="mt-5 py-10 flex flex-col justify-center items-center text-xs text-gray-300 xl:items-center">
-        <div className="flex flex-row space-x-4">
-          <div className="mt-4 flex flex-col sm:mt-0 space-y-2">
-            <a className="ml-4 sm:ml-8 text-gray-300 underline dark:hover:text-gray-100" href="">Contact</a>
-            <a className="ml-4 sm:ml-8 text-gray-300 underline dark:hover:text-gray-100" href="">Contact</a>
-            <a className="ml-4 sm:ml-8 text-gray-300 underline dark:hover:text-gray-100" href="">App Store</a>
-          </div>
-          <div className="mt-4 flex flex-col sm:mt-0 space-y-2">
-            <a className="ml-4 sm:ml-8 text-gray-300 underline dark:hover:text-gray-100" href="">Privacy</a>
-            <a className="ml-4 sm:ml-8 text-gray-300 underline dark:hover:text-gray-100" href="">Blog</a>
-            <a className="ml-4 sm:ml-8 text-gray-300 underline dark:hover:text-gray-100" href="">Google Play</a>
-          </div>
-          <div className="mt-4 flex flex-col sm:mt-0 space-y-2">
-            <a className="ml-4 sm:ml-8 text-gray-300 underline dark:hover:text-gray-100" href="">Terms of Service</a>
-            <a className="ml-4 sm:ml-8 text-gray-300 underline dark:hover:text-gray-100" href="">Press Kit</a>
-            <a className="ml-4 sm:ml-8 text-gray-300 underline dark:hover:text-gray-100" href="https://diuroutinecse.netlify.app/" target="_blank">View also in web</a>
-          </div>
-        </div>
         <div className="mt-8">
           Made with ❤️ and ☕️ by © Hafizur Rahman 2025
         </div>
       </div>
-
-
-
     </main>
   );
 }

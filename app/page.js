@@ -381,6 +381,7 @@ export default function Home() {
               src="/assets/sc1.png"
               width={500}
               height={500}
+              priority
               alt="Picture of the author"
               className="w-full p-10  transition-transform duration-500 ease-in-out hover:scale-105 drop-shadow-[10px_0_10px_rgba(0,0,0,0.5)]"
             />
@@ -392,6 +393,7 @@ export default function Home() {
               src="/assets/mock.svg"
               width={500}
               height={500}
+              priority
               alt="Picture of the author"
               className="w-full p-10 transition-transform duration-500 ease-in-out hover:scale-105 drop-shadow-[10px_0_10px_rgba(0,0,0,0.5)]"
             />

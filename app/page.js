@@ -1,9 +1,4 @@
 import Image from "next/image";
-import { FiLinkedin } from "react-icons/fi";
-import { FiTwitter } from "react-icons/fi";
-import { MdOutlineEmail } from "react-icons/md";
-import { CgFileDocument } from "react-icons/cg";
-
 
 
 export default function Home() {
@@ -14,31 +9,31 @@ export default function Home() {
           Routine<span className="text-teal-600">Viewer</span>
         </a>
         <div className="flex items-center mt-2 text-sm text-gray-200 xl:mt-0 pb-2">
-          <a className="ml-4 hover:text-white" href="#" target="_blank">
+          <a className="ml-4 hover:text-white" href="https://www.linkedin.com/in/hafizflow/" target="_blank">
             <Image
-              src="/assets/linkdin.svg"
+              src="/assets/in.svg"
               width={30}
               height={30}
               alt="Picture of the author"
-              className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              className="duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
             />
           </a>
-          <a className="ml-4 hover:text-white" href="https://www.linkedin.com/in/hafizflow/" target="_blank">
+          <a className="ml-4 hover:text-white" href="https://github.com/hafizflow" target="_blank">
             <Image
               src="/assets/git.svg"
               width={30}
               height={30}
               alt="Picture of the author"
-              className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
             />
           </a>
-          <a className="ml-4 hover:text-white" href="" target="_blank">
+          <a className="ml-4 hover:text-white" href="mailto:rahman15-5678@diu.edu.bd" target="_blank" rel="noopener noreferrer">
             <Image
               src="/assets/email.svg"
               width={30}
               height={30}
               alt="Picture of the author"
-              className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
+              className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
             />
           </a>
         </div>
@@ -210,6 +205,174 @@ export default function Home() {
 
 
       <div className="mt-12 animate-fade-up">
+        <div className="grid gap-4 my-6 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+          {/* characteristic */}
+          <div className="flex">
+            <div className="text-xl">
+              <Image
+                src="/assets/search.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-0.5 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </div>
+            <div className="ml-3">
+              <h3 className="font-bold">Routine Search</h3>
+              <p className="mt-1 text-sm text-gray-400">
+                Quickly find any student or teacher routine by name or section — view detailed schedules instantly.
+              </p>
+            </div>
+          </div>
+          {/* characteristic */}
+          <div className="flex">
+            <div className="text-xl">
+              <Image
+                src="/assets/bba.svg"
+                width={35}
+                height={35}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </div>
+            <div className="ml-3">
+              <h3 className="font-bold">BBA & MCT Department</h3>
+              <p className="mt-1 text-sm text-gray-400">
+                Data for this department will be added soon. Stay tuned!
+              </p>
+            </div>
+          </div>
+          {/* characteristic */}
+          <div className="flex">
+            <div className="text-xl">
+              <Image
+                src="/assets/noti.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-0.5 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </div>
+            <div className="ml-3">
+              <h3 className="font-bold">Notification</h3>
+              <p className="mt-1 text-sm text-gray-400">
+                Stay updated with real-time notifications about routine updates or important alerts.
+              </p>
+            </div>
+          </div>
+
+
+          {/* characteristic */}
+          <div className="flex">
+            <div className="text-xl">
+              <Image
+                src="/assets/theme.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </div>
+            <div className="ml-3">
+              <h3 className=" font-bold">Theme Mode</h3>
+              <p className="mt-1 text-sm text-gray-400">
+                Easily toggle between light and dark mode for a comfortable viewing experience.
+              </p>
+            </div>
+          </div>
+          {/* characteristic */}
+          <div className="flex">
+            <div className="text-xl">
+              <Image
+                src="/assets/calender.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </div>
+            <div className="ml-3">
+              <h3 className="font-bold">Calendar View</h3>
+              <p className="mt-1 text-sm text-gray-400">
+                Switch between different calendar views to see your routine the way you prefer.
+              </p>
+            </div>
+          </div>
+          {/* characteristic */}
+          <div className="flex">
+            <div className="text-xl">
+              <Image
+                src="/assets/pdf.png"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </div>
+            <div className="ml-3">
+              <h3 className="font-bold">PDF Export & Share</h3>
+              <p className="mt-1 text-sm text-gray-400">
+                Generate and share your class routine as a clean, ready-to-print PDF in seconds.
+              </p>
+            </div>
+          </div>
+
+          {/* characteristic */}
+          <div className="flex">
+            <div className="text-xl">
+              <Image
+                src="/assets/teacher.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </div>
+            <div className="ml-3">
+              <h3 className="font-bold">Teacher Info</h3>
+              <p className="mt-1 text-sm text-gray-400">
+                Access teacher details like initials, designation, and assigned courses in one tap.r.
+              </p>
+            </div>
+          </div>
+          {/* characteristic */}
+          <div className="flex">
+            <div className="text-xl">
+              <Image
+                src="/assets/door.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-0.5 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </div>
+            <div className="ml-3">
+              <h3 className="font-bold">Empty Room Finder </h3>
+              <p className="mt-1 text-sm text-gray-400">
+                Find available rooms based on specific dates and time slots — perfect for study or meetings.
+              </p>
+            </div>
+          </div>
+          {/* characteristic */}
+          <div className="flex">
+            <div className="text-xl">
+              <Image
+                src="/assets/growth.png"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </div>
+            <div className="ml-3">
+              <h3 className="font-bold">Routine Insights</h3>
+              <p className="mt-1 text-sm text-gray-400">
+                Get insightful stats on your weekly or semester schedule — total classes, hours, and more.
+              </p>
+            </div>
+          </div>
+
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-gradient-to-r from-teal-900 to-teal-800 p-10 rounded-lg h-96  overflow-hidden">
             <h3 className="text-lg font-semibold">Home Screen Widgets</h3>
@@ -234,174 +397,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="grid gap-4 mt-6 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
-          {/* characteristic */}
-          <div className="flex">
-            <div className="text-xl">
-              <Image
-                src="/assets/search.svg"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
-              />
-            </div>
-            <div className="ml-3">
-              <h3 className="font-bold">Routine Search</h3>
-              <p className="mt-1 text-sm text-gray-400">
-                Quickly find any student or teacher routine by name or section — view detailed schedules instantly.
-              </p>
-            </div>
-          </div>
-          {/* characteristic */}
-          <div className="flex">
-            <div className="text-xl">
-              <Image
-                src="/assets/bba.svg"
-                width={35}
-                height={35}
-                alt="Picture of the author"
-                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
-              />
-            </div>
-            <div className="ml-3">
-              <h3 className="font-bold">BBA & MCT Department</h3>
-              <p className="mt-1 text-sm text-gray-400">
-                Data for this department will be added soon. Stay tuned!
-              </p>
-            </div>
-          </div>
-          {/* characteristic */}
-          <div className="flex">
-            <div className="text-xl">
-              <Image
-                src="/assets/noti.svg"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
-              />
-            </div>
-            <div className="ml-3">
-              <h3 className="font-bold">Notification</h3>
-              <p className="mt-1 text-sm text-gray-400">
-                Stay updated with real-time notifications about routine updates or important alerts.
-              </p>
-            </div>
-          </div>
 
-
-          {/* characteristic */}
-          <div className="flex">
-            <div className="text-xl">
-              <Image
-                src="/assets/theme.svg"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
-              />
-            </div>
-            <div className="ml-3">
-              <h3 className=" font-bold">Theme Mode</h3>
-              <p className="mt-1 text-sm text-gray-400">
-                Easily toggle between light and dark mode for a comfortable viewing experience.
-              </p>
-            </div>
-          </div>
-          {/* characteristic */}
-          <div className="flex">
-            <div className="text-xl">
-              <Image
-                src="/assets/calender.svg"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
-              />
-            </div>
-            <div className="ml-3">
-              <h3 className="font-bold">Calendar View</h3>
-              <p className="mt-1 text-sm text-gray-400">
-                Switch between different calendar views to see your routine the way you prefer.
-              </p>
-            </div>
-          </div>
-          {/* characteristic */}
-          <div className="flex">
-            <div className="text-xl">
-              <Image
-                src="/assets/pdf.svg"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
-              />
-            </div>
-            <div className="ml-3">
-              <h3 className="font-bold">PDF Export & Share</h3>
-              <p className="mt-1 text-sm text-gray-400">
-                Generate and share your class routine as a clean, ready-to-print PDF in seconds.
-              </p>
-            </div>
-          </div>
-
-          {/* characteristic */}
-          <div className="flex">
-            <div className="text-xl">
-              <Image
-                src="/assets/teacher.svg"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
-              />
-            </div>
-            <div className="ml-3">
-              <h3 className="font-bold">Teacher Info</h3>
-              <p className="mt-1 text-sm text-gray-400">
-                Access teacher details like initials, designation, and assigned courses in one tap.r.
-              </p>
-            </div>
-          </div>
-          {/* characteristic */}
-          <div className="flex">
-            <div className="text-xl">
-              <Image
-                src="/assets/door.svg"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
-              />
-            </div>
-            <div className="ml-3">
-              <h3 className="font-bold">Empty Room Finder </h3>
-              <p className="mt-1 text-sm text-gray-400">
-                Find available rooms based on specific dates and time slots — perfect for study or meetings.
-              </p>
-            </div>
-          </div>
-          {/* characteristic */}
-          <div className="flex">
-            <div className="text-xl">
-              <Image
-                src="/assets/stat.svg"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="p-1 duration-200 text-red-500 bg-white transform rounded-full shadow hover:scale-105"
-              />
-            </div>
-            <div className="ml-3">
-              <h3 className="font-bold">Routine Insights</h3>
-              <p className="mt-1 text-sm text-gray-400">
-                Get insightful stats on your weekly or semester schedule — total classes, hours, and more.
-              </p>
-            </div>
-          </div>
-
-        </div>
 
       </div>
 

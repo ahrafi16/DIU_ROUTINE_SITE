@@ -389,7 +389,7 @@ export default function Home() {
             <h3 className="text-lg font-semibold">Home Screen Widgets</h3>
             <p className="text-sm">on iOS 17+ and Android</p>
             <Image
-              src="/assets/sc2.png"
+              src="/assets/mock.svg"
               width={500}
               height={500}
               alt="Picture of the author"

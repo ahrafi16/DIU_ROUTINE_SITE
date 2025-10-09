@@ -1,7 +1,20 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import React, { useState } from "react";
 
 export default function Home() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = (e) => {
+    e.preventDefault();
+    setIsOpen(true);
+  };
+
+
+  const handleClose = () => setIsOpen(false);
+
   return (
     <main className="bg-black text-white h-screen flex flex-col px-10 pb-10 mx-auto md:px-30 lg:px-40 xl:px-60 2xl:px-80">
       {/* nav */}
@@ -72,12 +85,16 @@ export default function Home() {
             /></a>
           </div>
           <div className="transition hover:scale-105">
-            <a className="flex items-center gap-4 p-3 h-16 border-2 border-gray-300 rounded-lg" href="">
+            <a
+              href="#"
+              onClick={handleOpen}
+              className="flex items-center gap-4 p-3 h-16 border-2 border-gray-300 rounded-lg"
+            >
               <Image
                 src="/assets/yt.svg"
                 width={45}
                 height={45}
-                alt="Picture of the author"
+                alt="YouTube Logo"
                 unoptimized
                 className="h-10 md:h-16 rounded-lg"
               />
@@ -86,11 +103,41 @@ export default function Home() {
                 <h3 className="font-semibold text-2xl">YOUTUBE</h3>
               </div>
             </a>
-
-
           </div>
         </div>
       </div>
+
+      {/* modal */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center px-4">
+          <div className="relative w-full max-w-2xl aspect-video bg-black rounded-lg overflow-hidden shadow-lg">
+            {/* Close Button */}
+            <button
+              onClick={handleClose}
+              className="absolute top-2 right-2 text-white text-xl bg-gray-800 bg-opacity-70 rounded-full px-3 py-1 hover:bg-opacity-100 transition z-10"
+              aria-label="Close video"
+            >
+              <Image
+                src="/assets/cross.svg"
+                width={25}
+                height={25}
+                alt="YouTube Logo"
+                unoptimized
+                className=" h-10 cursor-pointer filter brightness-0 invert rounded-full"
+              />
+            </button>
+
+            {/* Embedded YouTube Shorts Video */}
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/PDcaBmactl8?autoplay=1&rel=0&modestbranding=1"
+              title="YouTube Shorts Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
 
 
 

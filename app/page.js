@@ -5,8 +5,15 @@ export default function Home() {
   return (
     <main className="bg-black text-white h-screen flex flex-col px-10 pb-10 mx-auto md:px-30 lg:px-40 xl:px-60 2xl:px-80">
       <div className="sticky flex flex-col sm:flex-row justify-between mt-6 xl:items-center animate-fade-up">
-        <a className="flex items-center text-4xl font-semibold md:leading-tight">
-          Routine<span className="text-teal-600">Viewer</span>
+        <a className="flex items-center gap-2 text-4xl font-semibold md:leading-tight">
+          <Image
+            src="/assets/app.svg"
+            width={50}
+            height={50}
+            alt="APP ICONs"
+            className="duration-200 transform shadow hover:scale-105"
+          />
+          DIU<span className="text-teal-600">Routine</span>
         </a>
         <div className="flex items-center mt-2 text-sm text-gray-200 xl:mt-0 pb-2">
           <a className="ml-4 hover:text-white" href="https://www.linkedin.com/in/hafizflow/" target="_blank">
@@ -51,7 +58,7 @@ export default function Home() {
             Stay on top of your schedule with an easy-to-use routine viewer. See your day clearly and stay motivated to achieve more.
           </p>
         </div>
-        <div className="mt-12 gap-5 flex items-center justify-center scale animate-fade-up">
+        <div className="my-12 gap-5 flex items-center justify-center scale animate-fade-up">
           <div className="relative transition hover:scale-105">
             <a href=""> <Image
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png"
@@ -77,7 +84,7 @@ export default function Home() {
 
 
 
-      <div className="mt-8 gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 items-center animate-fade-up">
+      <div className="my-8 gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 items-center animate-fade-up">
         <Image
           src="/assets/sc4.png"
           priority
@@ -124,88 +131,9 @@ export default function Home() {
       </div>
 
 
-      {/* <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
-        <div className="flex flex-col bg-scaffold shadow-xl border border-gray-300 px-4 py-4 rounded-xl">
-          <div className="flex justify-between">
-            <div className="font-semibold text-xl underline">Greate Job</div>
-            <div className="flex">
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-            </div>
-          </div>
-          <div className="mt-4 flex-1">
-            I love this app, it’s helped me finally get a lot of the
-            habits in place that I’ve been trying to get down for years!
-          </div>
-          <div className="flex justify-end items-end mt-2 text-sm text-gray-400">
-            <div>Amit Chakrabarty Choton</div>
-          </div>
-        </div>
-        <div className="flex flex-col bg-scaffold shadow-xl border border-gray-300 px-4 py-4 rounded-xl">
-          <div className="flex justify-between">
-            <div className="font-semibold text-xl underline">Perfect</div>
-            <div className="flex">
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-            </div>
-          </div>
-          <div className="mt-4 flex-1">
-            I love this app, it’s helped me finally get a lot of the
-            habits in place that I’ve been trying to get down for years!
-          </div>
-          <div className="flex justify-end items-end mt-2 text-sm text-gray-400">
-            <div>🇬🇧 Beth L. Brown</div>
-          </div>
-        </div>
-        <div className="flex flex-col bg-scaffold shadow-xl border border-gray-300 px-4 py-4 rounded-xl">
-          <div className="flex justify-between">
-            <div className="font-semibold text-xl underline">Perfect</div>
-            <div className="flex">
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-            </div>
-          </div>
-          <div className="mt-4 flex-1">
-            I love this app, it’s helped me finally get a lot of the
-            habits in place that I’ve been trying to get down for years!
-          </div>
-          <div className="flex justify-end items-end mt-2 text-sm text-gray-400">
-            <div>🇬🇧 Beth L. Brown</div>
-          </div>
-        </div>
-        <div className="flex flex-col bg-scaffold shadow-xl border border-gray-300 px-4 py-4 rounded-xl">
-          <div className="flex justify-between">
-            <div className="font-semibold text-xl underline">Perfect</div>
-            <div className="flex">
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-              <FaStar className="text-yellow-500" />
-            </div>
-          </div>
-          <div className="mt-4 flex-1">
-            I love this app, it’s helped me finally get a lot of the
-            habits in place that I’ve been trying to get down for years!
-          </div>
-          <div className="flex justify-end items-end mt-2 text-sm text-gray-400">
-            <div>🇬🇧 Beth L. Brown</div>
-          </div>
-        </div>
-      </div> */}
-
 
       <div className="mt-12 animate-fade-up">
-        <div className="grid gap-4 my-6 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 my-10 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
@@ -371,12 +299,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-gradient-to-r from-teal-900 to-teal-800 p-10 rounded-lg h-96  overflow-hidden">
-            <h3 className="text-lg font-semibold">Home Screen Widgets</h3>
-            <p className="text-sm">on iOS 17+ and Android</p>
+            <h3 className="text-lg font-semibold">Home Screen in dark mode</h3>
+            <p className="text-sm">on iOS 18 & above</p>
             <Image
               src="/assets/sc1.png"
               width={500}
@@ -387,10 +315,10 @@ export default function Home() {
             />
           </div>
           <div className="bg-gradient-to-r from-teal-900 to-teal-800 p-10 rounded-lg h-96 overflow-hidden">
-            <h3 className="text-lg font-semibold">Home Screen Widgets</h3>
-            <p className="text-sm">on iOS 17+ and Android</p>
+            <h3 className="text-lg font-semibold">Home Screen in Lite mode</h3>
+            <p className="text-sm">on iOS 18 & above</p>
             <Image
-              src="/assets/mock.svg"
+              src="/assets/imoc.svg"
               width={500}
               height={500}
               priority
@@ -399,8 +327,6 @@ export default function Home() {
             />
           </div>
         </div>
-
-
       </div>
 
       {/* get it on ios and android */}

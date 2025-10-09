@@ -4,25 +4,26 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="bg-black text-white h-screen flex flex-col px-10 pb-10 mx-auto md:px-30 lg:px-40 xl:px-60 2xl:px-80">
-      <div className="sticky flex flex-col sm:flex-row justify-between mt-6 xl:items-center animate-fade-up">
-        <a className="flex items-center gap-2 text-4xl font-semibold md:leading-tight">
+      {/* nav */}
+      <div className="sticky flex sm:flex-row justify-between mt-6 xl:items-center animate-fade-up">
+        <a className="flex items-center gap-3 font-bold text-2xl md:text-4xl md:leading-tight">
           <Image
             src="/assets/app.svg"
-            width={50}
-            height={50}
+            width={45}
+            height={45}
             alt="APP ICONs"
             className="duration-200 transform shadow hover:scale-105"
           />
-          DIU<span className="text-teal-600">Routine</span>
+          <div> DIU<span className="text-teal-600 font-bold">Routine</span></div>
         </a>
         <div className="flex items-center mt-2 text-sm text-gray-200 xl:mt-0 pb-2">
           <a className="ml-4 hover:text-white" href="https://www.linkedin.com/in/hafizflow/" target="_blank">
             <Image
-              src="/assets/in.svg"
+              src="/assets/in1.svg"
               width={30}
               height={30}
               alt="Picture of the author"
-              className="duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
             />
           </a>
           <a className="ml-4 hover:text-white" href="https://github.com/hafizflow" target="_blank">
@@ -58,9 +59,10 @@ export default function Home() {
             Stay on top of your schedule with an easy-to-use routine viewer. See your day clearly and stay motivated to achieve more.
           </p>
         </div>
-        <div className="my-12 gap-5 flex items-center justify-center scale animate-fade-up">
+        <div className="my-12 gap-5 flex flex-col md:flex-row items-center justify-center scale animate-fade-up">
+          {/* get it on */}
           <div className="relative transition hover:scale-105">
-            <a href=""> <Image
+            <a href="https://apps.apple.com/us/app/diu-routine/id6748752277" target="_blank"> <Image
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png"
               width={200}
               height={200}
@@ -69,21 +71,30 @@ export default function Home() {
               className="h-16 border border-gray-300 rounded-lg"
             /></a>
           </div>
-          <div className="relative transition hover:scale-105">
-            <a href=""> <Image
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png"
-              width={200}
-              height={200}
-              alt="Picture of the author"
-              unoptimized
-              className="h-16 border border-gray-300 rounded-lg"
-            /></a>
+          <div className="transition hover:scale-105">
+            <a className="flex items-center gap-4 p-3 h-16 border-2 border-gray-300 rounded-lg" href="">
+              <Image
+                src="/assets/yt.svg"
+                width={45}
+                height={45}
+                alt="Picture of the author"
+                unoptimized
+                className="h-10 md:h-16 rounded-lg"
+              />
+              <div className="leading-none">
+                <p>Demo on</p>
+                <h3 className="font-semibold text-2xl">YOUTUBE</h3>
+              </div>
+            </a>
+
+
           </div>
         </div>
       </div>
 
 
 
+      {/* 4 displey */}
       <div className="my-8 gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 items-center animate-fade-up">
         <Image
           src="/assets/sc4.png"
@@ -132,7 +143,7 @@ export default function Home() {
 
 
 
-      <div className="mt-12 animate-fade-up">
+      <div className="animate-fade-up">
         <div className="grid gap-4 my-10 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
           {/* characteristic */}
           <div className="flex">
@@ -164,9 +175,9 @@ export default function Home() {
               />
             </div>
             <div className="ml-3">
-              <h3 className="font-bold">BBA & MCT Department</h3>
+              <h3 className="font-bold">Offline mode</h3>
               <p className="mt-1 text-sm text-gray-400">
-                Data for this department will be added soon. Stay tuned!
+                Stay on track anywhere! View your routine even when offline.
               </p>
             </div>
           </div>
@@ -188,8 +199,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
-
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
@@ -230,7 +239,7 @@ export default function Home() {
           <div className="flex">
             <div className="text-xl">
               <Image
-                src="/assets/pdf.png"
+                src="/assets/pdf3.svg"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -244,7 +253,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           {/* characteristic */}
           <div className="flex">
             <div className="text-xl">
@@ -285,7 +293,7 @@ export default function Home() {
           <div className="flex">
             <div className="text-xl">
               <Image
-                src="/assets/growth.png"
+                src="/assets/stat1.svg"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -301,7 +309,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        {/* 2 display */}
+        <div className="grid my-8 grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-gradient-to-r from-teal-900 to-teal-800 p-10 rounded-lg h-96  overflow-hidden">
             <h3 className="text-lg font-semibold">Home Screen in dark mode</h3>
             <p className="text-sm">on iOS 18 & above</p>
@@ -329,37 +339,215 @@ export default function Home() {
         </div>
       </div>
 
-      {/* get it on ios and android */}
-      <div className="mt-12 gap-5 flex items-center justify-center scale animate-fade-up">
-        <div className="relative transition hover:scale-105">
-          <a href=""> <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png"
-            width={200}
-            height={200}
-            alt="Picture of the author"
-            unoptimized
-            className="h-16 border border-gray-300 rounded-lg"
-          /></a>
+      {/* developer info */}
+      <div className="my-12 gap-5 grid grid-cols-1 md:grid-cols-2 items-center justify-center scale animate-fade-up">
+        {/* card 1 */}
+        <div className="bg-[#2b2b2b] p-5 rounded-2xl space-y-3">
+          <div className="flex gap-3 items-center">
+            <Image
+              src="/assets/evan.jpg"
+              width={50}
+              height={50}
+              alt="Picture of the author"
+              unoptimized
+              className="rounded-full border-1 border-teal-600"
+            />
+            <div>
+              <h2 className="text-xl font-bold">Abdullah Rahman Evaan</h2>
+              <p className="text-gray-300">Web Developer</p>
+            </div>
+          </div>
+          <div className="text-gray-300">
+            Full-stack developer building secure web apps with Django, Laravel, and iOS apps with SwiftUI.
+          </div>
+          <div className="flex gap-2 items-center justify-start">
+            <a className=" hover:text-white" href="https://www.linkedin.com/in/evaan321" target="_blank">
+              <Image
+                src="/assets/in1.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+            <a className=" hover:text-white" href="https://github.com/evaan321" target="_blank">
+              <Image
+                src="/assets/git.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+            <a className=" hover:text-white" href="http://t.me/evaan321" target="_blank">
+              <Image
+                src="/assets/tg1.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+          </div>
         </div>
-        <div className="relative transition hover:scale-105">
-          <a href=""> <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png"
-            width={200}
-            height={200}
-            alt="Picture of the author"
-            unoptimized
-            className="h-16 border border-gray-300 rounded-lg"
-          /></a>
+        {/* card 2 */}
+        <div className="bg-[#2b2b2b] p-5 rounded-2xl space-y-3">
+          <div className="flex gap-3 items-center">
+            <Image
+              src="/assets/shukla.jpg"
+              width={50}
+              height={50}
+              alt="Picture of the author"
+              unoptimized
+              className="rounded-full border-1 border-teal-600"
+            />
+            <div>
+              <h2 className="text-xl font-bold">Shukla Ghosh</h2>
+              <p className="text-gray-300">IOS Developer</p>
+            </div>
+          </div>
+          <div className="text-gray-300">
+            Creative iOS Developer crafting intuitive, high-quality apps with Swift and SwiftUI.
+          </div>
+          <div className="flex gap-2 items-center justify-start">
+            <a className=" hover:text-white" href="https://www.linkedin.com/in/shuk29" target="_blank">
+              <Image
+                src="/assets/in1.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+            <a className=" hover:text-white" href="https://github.com/shuk29" target="_blank">
+              <Image
+                src="/assets/git.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+            <a className=" hover:text-white" href="https://www.facebook.com/shuk.29" target="_blank">
+              <Image
+                src="/assets/fb1.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+          </div>
         </div>
+        {/* card 3 */}
+        <div className="bg-[#2b2b2b] p-5 rounded-2xl space-y-3">
+          <div className="flex gap-3 items-center">
+            <Image
+              src="/assets/hafiz.jpg"
+              width={50}
+              height={50}
+              alt="Picture of the author"
+              unoptimized
+              className="rounded-full object-cover border-1 border-teal-600"
+            />
+            <div>
+              <h2 className="text-xl font-bold">Hafizur Rahman</h2>
+              <p className="text-gray-300">Mobile & Backend</p>
+            </div>
+          </div>
+          <div className="text-gray-300">
+            Always eager to take on new challenges and passionate about learning emerging technologies.
+          </div>
+          <div className="flex gap-2 items-center justify-start">
+
+            <a className=" hover:text-white" href="https://github.com/hafizflow" target="_blank">
+              <Image
+                src="/assets/git.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+            <a className=" hover:text-white" href="https://www.linkedin.com/in/hafizflow/" target="_blank">
+              <Image
+                src="/assets/in1.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+            <a className=" hover:text-white" href="http://t.me/hafizflow45" target="_blank">
+              <Image
+                src="/assets/tg1.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+          </div>
+        </div>
+        {/* card 4 */}
+        <div className="bg-[#2b2b2b] p-5 rounded-2xl space-y-3">
+          <div className="flex gap-3 items-center">
+            <Image
+              src="https://scontent.fdac175-1.fna.fbcdn.net/v/t39.30808-6/476278433_2400114986990155_6868560511447482256_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGdTsmUsrk_rYbft0a99hHIIS3F0aUiVSghLcXRpSJVKNmUxAqecOSmYjgU8q6HHg9Ua4oObn8MKyNEajvomTFJ&_nc_ohc=pU5txbOBEAwQ7kNvwHo04Ph&_nc_oc=AdkH1JEJ7aGgQ4ILQabxJR66bT3hydr9kr-2lHb0S92QuvbK2UG56DWZ1KKFQEUP7-Q&_nc_zt=23&_nc_ht=scontent.fdac175-1.fna&_nc_gid=1Ljncge0XRYdqgXd776qNw&oh=00_AfcrqRTr3FQCxC88wwMuWhiH5If15dKNT2_2nrGH3VOjkw&oe=68ED4AC0"
+              width={50}
+              height={50}
+              alt="Picture of the author"
+              unoptimized
+              className="rounded-full border-1 border-teal-600"
+            />
+            <div>
+              <h2 className="text-xl font-bold">Anjum Hossain</h2>
+              <p className="text-gray-300">Web Developer</p>
+            </div>
+          </div>
+          <div className="text-gray-300">
+            Web Developer driven by curiosity and a passion for learning the latest web technologies.
+          </div>
+          <div className="flex gap-2 items-center justify-start">
+            <a className=" hover:text-white" href="https://www.linkedin.com/in/anjum-hossain-519a192b2/" target="_blank">
+              <Image
+                src="/assets/in1.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+            <a className=" hover:text-white" href="https://github.com/ahrafi16" target="_blank">
+              <Image
+                src="/assets/git.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+            <a className=" hover:text-white" href="https://www.facebook.com/anjumhossain.rafi/" target="_blank">
+              <Image
+                src="/assets/fb1.svg"
+                width={30}
+                height={30}
+                alt="Picture of the author"
+                className="p-1 duration-200 filter brightness-0 invert transform rounded-full shadow hover:scale-105"
+              />
+            </a>
+          </div>
+        </div>
+
       </div>
 
 
       {/* footer */}
-      <div className="mt-5 py-10 flex flex-col justify-center items-center text-xs text-gray-300 xl:items-center">
+      <div className="mt-5 pb-10 flex flex-col justify-center items-center text-xs text-gray-300 xl:items-center">
         <div className="mt-8">
           Made with ❤️ and ☕️ by © Hafizur Rahman 2025
         </div>
       </div>
     </main>
-  );
+  ); s
 }

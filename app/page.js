@@ -109,8 +109,8 @@ export default function Home() {
 
       {/* modal */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center px-4">
-          <div className="relative w-full max-w-2xl aspect-video bg-black rounded-lg overflow-hidden shadow-lg">
+        <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center px-4">
+          <div className="relative w-full max-w-2xl aspect-square bg-black/50 rounded-lg overflow-hidden shadow-lg">
             {/* Close Button */}
             <button
               onClick={handleClose}
@@ -129,7 +129,7 @@ export default function Home() {
 
             {/* Embedded YouTube Shorts Video */}
             <iframe
-              className="w-full h-full"
+              className="h-full w-full"
               src="https://www.youtube.com/embed/PDcaBmactl8?autoplay=1&rel=0&modestbranding=1"
               title="YouTube Shorts Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -149,7 +149,7 @@ export default function Home() {
           width={500}
           height={500}
           alt="Screenshot 4"
-          className="w-full transition-transform duration-700 ease-in-out hover:scale-105"
+          className="w-1/2 mx-auto md:w-full transition-transform duration-700 ease-in-out hover:scale-105"
           placeholder="blur"
           blurDataURL="/assets/sc4.png"
         />
@@ -540,7 +540,7 @@ export default function Home() {
         <div className="bg-[#2b2b2b] p-5 rounded-2xl space-y-3">
           <div className="flex gap-3 items-center">
             <Image
-              src="https://scontent.fdac175-1.fna.fbcdn.net/v/t39.30808-6/476278433_2400114986990155_6868560511447482256_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGdTsmUsrk_rYbft0a99hHIIS3F0aUiVSghLcXRpSJVKNmUxAqecOSmYjgU8q6HHg9Ua4oObn8MKyNEajvomTFJ&_nc_ohc=pU5txbOBEAwQ7kNvwHo04Ph&_nc_oc=AdkH1JEJ7aGgQ4ILQabxJR66bT3hydr9kr-2lHb0S92QuvbK2UG56DWZ1KKFQEUP7-Q&_nc_zt=23&_nc_ht=scontent.fdac175-1.fna&_nc_gid=1Ljncge0XRYdqgXd776qNw&oh=00_AfcrqRTr3FQCxC88wwMuWhiH5If15dKNT2_2nrGH3VOjkw&oe=68ED4AC0"
+              src="/assets/ahr.jpg"
               width={50}
               height={50}
               alt="Picture of the author"
@@ -592,9 +592,12 @@ export default function Home() {
       {/* footer */}
       <div className="mt-5 pb-10 flex flex-col justify-center items-center text-xs text-gray-300 xl:items-center">
         <div className="mt-8">
+          Email : rahman15-5678@diu.edu.bd
+        </div>
+        <div className="mt-8">
           Made with ❤️ and ☕️ by © Hafizur Rahman 2025
         </div>
       </div>
     </main>
-  ); s
+  );
 }

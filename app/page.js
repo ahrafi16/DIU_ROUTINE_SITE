@@ -17,6 +17,9 @@ export default function Home() {
 
   return (
     <main className="bg-black text-white h-screen flex flex-col px-10 pb-10 mx-auto md:px-30 lg:px-40 xl:px-60 2xl:px-80">
+
+
+
       {/* nav */}
       <div className="sticky flex sm:flex-row justify-between mt-6 xl:items-center animate-fade-up">
         <a className="flex items-center gap-3 font-bold text-2xl md:text-4xl md:leading-tight">
@@ -149,7 +152,7 @@ export default function Home() {
           width={500}
           height={500}
           alt="Screenshot 4"
-          className="w-1/2 mx-auto md:w-full transition-transform duration-700 ease-in-out hover:scale-105"
+          className="w-2/3 mx-auto md:w-full transition-transform duration-700 ease-in-out hover:scale-105"
           placeholder="blur"
           blurDataURL="/assets/sc4.png"
         />

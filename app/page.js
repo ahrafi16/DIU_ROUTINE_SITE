@@ -375,7 +375,7 @@ export default function Home() {
             />
           </div>
           <div className="bg-gradient-to-r from-teal-900 to-teal-800 p-10 rounded-lg h-96 overflow-hidden">
-            <h3 className="text-lg font-semibold">Home Screen in Lite mode</h3>
+            <h3 className="text-lg font-semibold">Home Screen in Light mode</h3>
             <p className="text-sm">on iOS 18 & above</p>
             <Image
               src="/assets/imoc.svg"
